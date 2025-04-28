@@ -1,0 +1,14 @@
+.container-slider {
+    width: 100%;
+    height: 100%;  /* Chiều cao tự động theo chiều rộng */
+    aspect-ratio: 21/9; /* Hoặc tỷ lệ khác tùy ý, ví dụ: 4/3, 21/9 */
+    overflow: hidden;  /* Nếu ảnh quá lớn thì sẽ bị cắt */
+    position: relative;
+}
+
+.container-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ảnh sẽ tự động phóng to hoặc thu nhỏ để phủ kín khung */
+    object-position: center center;  /* Căn giữa ảnh nếu tỷ lệ không khớp hoàn toàn */
+}
